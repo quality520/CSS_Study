@@ -1,0 +1,63 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>焦点图</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<div id="onepiece">
+		<ul class="tip">
+			<li>
+				<img src="images/1.jpg">
+			</li>
+			<li>
+				<img src="images/2.jpg">
+			</li>
+			<li>
+				<img src="images/3.jpg">
+			</li>
+			<li>
+				<img src="images/4.jpg">
+			</li>
+			<li>
+				<img src="images/5.jpg">
+			</li>
+			<li>
+				<img src="images/6.jpg">
+			</li>
+			<li>
+				<img src="images/7.jpg">
+			</li>
+			<li>
+				<img src="images/8.jpg">
+			</li>
+			<li>
+				<img src="images/9.jpg">
+			</li>
+			
+		</ul>
+	</div>
+	<ul id="dotLists">
+			<li class="dot"></li>
+			<li class="dot"></li>
+			<li class="dot"></li>
+			<li class="dot"></li>
+			<li class="dot"></li>
+			<li class="dot"></li>
+			<li class="dot"></li>
+			<li class="dot"></li>
+			<li class="dot"></li>
+	</ul>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.js"></script>
+	<script>
+		$(function(){
+			$("#onepiece").tip({
+				aTime: 1000,       //设置动画时间
+				tTime: 3000			//设置轮播时间
+			});
+		});
+	</script>
+</body>
+</html>

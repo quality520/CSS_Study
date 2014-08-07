@@ -1,0 +1,56 @@
+*{margin: 0;padding: 0;}
+
+ul{list-style: none;}
+img{border:none;}
+
+#onepiece{
+	position: relative;
+	width: 344px;
+	height: 440px;
+	margin: 80px auto;
+	border: 1px solid #aaa;
+	box-shadow: 0 0 20px 5px rgba(0,0,0,0.4);
+	overflow: hidden;
+	z-index: 0;
+}
+
+#onepiece .tip{
+	display: block;
+	position: absolute;
+	width: 344px;height: 440px;
+
+}
+
+#onepiece .tip li{
+	
+	float: left;
+}
+
+#dotLists{
+	
+	position: relative;
+	margin:-110px auto 0;
+	text-align: center;
+	height: 20px;
+	z-index: 20;
+
+}
+
+
+#dotLists .dot{
+
+	display: inline-block;
+	width: 12px; height: 12px;
+	margin: 0 4px;
+	border-radius: 50%;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	-ms-border-radius:50%;
+	-o-border-radius:50%;
+    cursor:pointer;
+	background-color: #fff;
+	}
+
+#dotLists .dot:hover{
+	background-color: #ccc;
+}
