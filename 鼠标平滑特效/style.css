@@ -1,0 +1,96 @@
+*{
+	margin:0;padding:0;
+}
+
+
+html,body,.container{ /*设置container高度浏览器自适应*/
+
+height:100%;
+
+}
+
+.container{
+	position: relative;
+	width:1024px;
+	height:100%;
+	margin: auto;
+}
+
+.photowall{
+
+	background: url(images/bg.jpg);     /*设置照片墙背景*/
+	background-size: cover;           /*设置背景以最小值填充*/
+	height:100%;                     /*设置照片墙的高度*/
+
+	display: -webkit-box;     /*应用盒子模型*/
+	display: -moz-box;
+	display: -o-box;
+	display: box;
+
+	-webkit-box-pack:center;   /*使盒子内元素水平居中*/
+	-moz-box-pack: center;
+	-o-box-pack: center;
+	box-pack:center;
+
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-o-box-align: center;
+	box-align: center;
+
+}
+
+.photowall .photoview{
+	/*给照片框应用样式*/
+	position: relative;
+	padding:6px; 
+	margin: 0 90px;
+	background:#000;
+	overflow: hidden; 
+ 	box-shadow: 2px 2px 10px #fff;  
+
+}
+
+.photoview .mask{
+	top:60px;
+	left: 120px;
+	position: absolute;
+	width: 120px;	/*设置遮盖物的宽高*/
+	height: 120px;
+
+	cursor:pointer;
+	border-radius: 60px;   /*给遮盖物设置圆角效果，如果radius=元素宽度*1/2 ，则此时元素就成一个圆形*/
+	border-width: 60px;
+	display: inline-block;
+	
+	border: 60px solid rgba(0,0,0,0.7);   
+	-moz-box-sizing:border-box; /*以border-box方式计算容器的宽高*/
+	-webkit-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing: border-box;
+
+
+	opacity: 1; /*设置遮盖物为不透明的*/
+	visibility:visible;  /*设置遮盖物是可见的*/
+
+
+	-moz-transform: scale(4); /*将遮盖物放大4倍尺寸*/
+	-webkit-transform: scale(4);
+	-o-transform: scale(4);
+	-ms-transform: scale(4);
+	transform:scale(4);
+
+
+
+	-moz-transition: all 0.4s ease-in-out;  /*一旦遮盖物属性发生变化时，进行平滑动画过度*/
+	-webkit-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+
+
+.photoview:hover .mask{
+	opacity: 0;
+	border: 0px solid rgba(0,0,0,0.7);
+	visibility: hidden;
+};
