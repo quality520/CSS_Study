@@ -1,3 +1,19 @@
+/*
+ *{  清空所有元素内外边距
+　　margin:0;
+　　padding:0;
+ }
+
+html,body,.container{ /*设置container高度浏览器自适应
+　　height:100%;
+}
+
+.container { /*设置container容器样式
+　　width:80%;
+　　margin:auto;
+　　padding:10px;
+}
+*/
 *{
 	margin:0;padding:0;
 }
@@ -11,7 +27,7 @@ height:100%;
 
 .container{
 	position: relative;
-	width:1024px;
+	width:90%;
 	height:100%;
 	margin: auto;
 }
@@ -43,10 +59,10 @@ height:100%;
 	/*给照片框应用样式*/
 	position: relative;
 	padding:6px; 
-	margin: 0 90px;
-	background:#000;
+	margin: 0;
+	
 	overflow: hidden; 
- 	box-shadow: 2px 2px 10px #fff;  
+ 	box-shadow: 0 0 10px 3px rgba(0,0,0,0.5);  
 
 }
 
@@ -62,7 +78,7 @@ height:100%;
 	border-width: 60px;
 	display: inline-block;
 	
-	border: 60px solid rgba(0,0,0,0.7);   
+	border: 60px solid rgba(0,0,0,0.5);   
 	-moz-box-sizing:border-box; /*以border-box方式计算容器的宽高*/
 	-webkit-box-sizing:border-box;
 	-o-box-sizing:border-box;
